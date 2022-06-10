@@ -62,13 +62,6 @@ This is a minimal demonstration of how to use `js-ipfs` in a `create-react-app` 
 
 It boots up a `js-ipfs` instance (an IPFS node) via a custom React hook in `./src/hooks/use-ipfs-factory.js`, which is called from `./src/App.js`. Once the IPFS node is set up, `./src/App.js` displays the [PeerId](https://docs.libp2p.io/concepts/peer-id/) of this node and the version number of `js-ipfs` used to spawn it.
 
-All React applications store their main logic in `App.js`:
-
-- `App.js` renders the cosmetics of the demo and calls `useIpfs` to retrieve the `id` of the node
-- `useIpfsFactory.js` initialises and closes the IPFS local node
-- `useIpfs.js` does the actual calls to IPFS to retrieve the property specified in argument (here the retrieved property is `id`, requested from `App.js`)
-
-
 ![Screen shot of the js app node info](./img/screenshot.png)
 
 _For more examples, please refer to the [Documentation](#documentation)_
